@@ -7,6 +7,10 @@ import java.io.IOException;
 public class Day1 {
     public static void main(String[]args) {
 
-        System.out.println("The final result of PROBLEM 1 is: " + SonarSweep.measurementIncreases("data.txt"));
+        int sinlgeMeasurement = SonarSweep.measurementIncreases("data.txt");
+        int threeMeasurement = SonarSweep.threeMeasurementSlidingWindowIncreases("data.txt");
+        System.out.println("The result of single-measurement is: " + sinlgeMeasurement);
+        System.out.println("The result of three-measurement sliding window is: " + threeMeasurement);
+
     }
 }
