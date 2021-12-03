@@ -1,4 +1,4 @@
-package day1;
+package main.java.adventofcode.common;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,12 +10,20 @@ import java.util.List;
 
 public class FileReaderClass {
 
+    String pathToFile;
+
+    public FileReaderClass(String path) {
+        pathToFile = path;
+    }
+
     public List<Integer> readFile(){
 
-        List<Integer> measureCollection = new LinkedList<Integer>();
+        List<Integer> measureCollection = new LinkedList<>();
 
         try {
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("data.txt");
+            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+            InputStream inputStream = classloader.getResourceAsStream(pathToFile);
+            assert inputStream != null;
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
             String line = reader.readLine();
