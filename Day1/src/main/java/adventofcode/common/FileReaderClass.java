@@ -16,7 +16,7 @@ public class FileReaderClass {
         pathToFile = path;
     }
 
-    public List<Integer> readFile(){
+    public List<Integer> readIntegers() {
 
         List<Integer> measureCollection = new LinkedList<>();
 
@@ -42,4 +42,33 @@ public class FileReaderClass {
         return measureCollection;
     }
 
+    public List<String> readStrings() {
+
+        List<String> measureCollection = new LinkedList<>();
+
+        try {
+            BufferedReader reader = getReader();
+
+            String line = reader.readLine();
+
+            while (line != null) {
+
+                measureCollection.add(line);
+                line = reader.readLine();
+            }
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return measureCollection;
+    }
+
+    private BufferedReader getReader() {
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        InputStream inputStream = classloader.getResourceAsStream(pathToFile);
+        assert inputStream != null;
+        return new BufferedReader(new InputStreamReader(inputStream));
+    }
 }
