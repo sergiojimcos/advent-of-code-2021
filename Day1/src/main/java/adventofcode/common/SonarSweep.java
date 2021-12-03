@@ -10,7 +10,7 @@ public class SonarSweep {
         int counterIncrease = 0;
 
         FileReaderClass fileReader = new FileReaderClass(path);
-        List<Integer> depthMeasures = fileReader.readFile();
+        List<Integer> depthMeasures = fileReader.readIntegers();
 
         if (depthMeasures.size() > 1){
             for (int i = 0; i < depthMeasures.size(); i++){
@@ -34,7 +34,7 @@ public class SonarSweep {
         int counterIncrease = 0;
 
         FileReaderClass fileReader = new FileReaderClass(path);
-        List<Integer> depthMeasures = fileReader.readFile();
+        List<Integer> depthMeasures = fileReader.readIntegers();
 
         if (depthMeasures.size() > 3){
             for (int i = 3; i < depthMeasures.size(); i++){
