@@ -1,6 +1,6 @@
 package test.java.adventofcode;
 
-import main.java.adventofcode.common.Diagnostic;
+import main.java.adventofcode.day3.Diagnostic;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 

@@ -1,6 +1,6 @@
 package test.java.adventofcode;
 
-import main.java.adventofcode.common.SonarSweep;
+import main.java.adventofcode.day1.SonarSweep;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 

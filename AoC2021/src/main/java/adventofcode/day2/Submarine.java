@@ -1,4 +1,6 @@
-package main.java.adventofcode.common;
+package main.java.adventofcode.day2;
+
+import main.java.adventofcode.common.FileReaderClass;
 
 import java.util.List;
 

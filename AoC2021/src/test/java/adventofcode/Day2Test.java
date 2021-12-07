@@ -1,6 +1,6 @@
 package test.java.adventofcode;
 
-import main.java.adventofcode.common.Submarine;
+import main.java.adventofcode.day2.Submarine;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 

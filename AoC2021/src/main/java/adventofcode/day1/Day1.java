@@ -1,7 +1,5 @@
 package main.java.adventofcode.day1;
 
-import main.java.adventofcode.common.SonarSweep;
-
 public class Day1 {
     public static void main(String[]args) {
 
