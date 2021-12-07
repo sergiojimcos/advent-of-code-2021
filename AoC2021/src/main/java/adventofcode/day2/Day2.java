@@ -1,6 +1,4 @@
-package main.java.adventofcode.day1;
-
-import main.java.adventofcode.common.Submarine;
+package main.java.adventofcode.day2;
 
 public class Day2 {
     public static void main(String[]args) {

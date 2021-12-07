@@ -1,4 +1,6 @@
-package main.java.adventofcode.common;
+package main.java.adventofcode.day3;
+
+import main.java.adventofcode.common.FileReaderClass;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +43,7 @@ public class Diagnostic {
 
     public static int lifeSupportRating(String path) {
 
-        FileReaderClass fileReader = new FileReaderClass(path);
+        main.java.adventofcode.common.FileReaderClass fileReader = new FileReaderClass(path);
         List<String> diagnostic = fileReader.readStrings();
 
         ArrayList<String> inputListOxy = new ArrayList<>(diagnostic);

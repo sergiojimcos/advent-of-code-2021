@@ -1,6 +1,6 @@
-package main.java.adventofcode.day1;
+package java.adventofcode.day3;
 
-import main.java.adventofcode.common.Diagnostic;
+import main.java.adventofcode.day3.Diagnostic;
 
 public class Day3 {
     public static void main(String[]args) {
