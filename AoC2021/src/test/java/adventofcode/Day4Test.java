@@ -11,14 +11,14 @@ public class Day4Test {
     @Test
     @DisplayName("Test Part I")
     public void testPartI() {
-        assertEquals(4512, Bingo.play("Day4_Example.txt"),
+        assertEquals(4512, Bingo.findWinner("Day4_Example.txt"),
                 "Result is not the expected one");
     }
 
-/*    @Test
+    @Test
     @DisplayName("Test Part II")
     public void testPartII() {
-        assertEquals(230, Diagnostic.lifeSupportRating("Day4_Example.txt"),
+        assertEquals(1924, Bingo.findLoser("Day4_Example.txt"),
                 "Result is not the expected one");
-    }*/
+    }
 }

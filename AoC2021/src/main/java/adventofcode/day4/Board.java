@@ -3,9 +3,9 @@ package main.java.adventofcode.day4;
 import java.util.List;
 
 public class Board {
-    private int [][] matrix = new int[5][5];
-    private int[] columns = new int[]{0, 0, 0, 0, 0};
-    private int[] row = new int[]{0, 0, 0, 0, 0};
+    private final int [][] matrix = new int[5][5];
+    private final int[] columns = new int[]{0, 0, 0, 0, 0};
+    private final int[] row = new int[]{0, 0, 0, 0, 0};
     private int total_count = 0;
 
     public Board(List<String> lines) {
@@ -17,6 +17,10 @@ public class Board {
                 this.total_count += number;
             }
         }
+    }
+
+    public int getTotal_count() {
+        return total_count;
     }
 
     public int checkNumber(int number){
